@@ -1,0 +1,55 @@
+.Topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BoardTitle {
+  font-size: var(--text-board-title-size);
+  font-weight: var(--text-board-title-weight);
+}
+
+.UserActions {
+  display: flex;
+  gap: 15px;
+  margin: 30px 50px 15px 0px;
+}
+
+.BtnAddNewTask {
+  height: 50px;
+  background-color: var(--background-tertiary-color);
+  color: var(--text-primary-color);
+  font-size: 1.3em;
+  font-weight: var(--text-board-title-weight);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.DottedMenu {
+  /*   margin: -5px 10px 10px 20px;
+ */
+  /*  padding: 0px 10px 0px 10px; */
+  /*  transform: rotate(90deg);
+  transform: translateY(-50%);
+  transform: translateX(50%); */
+  /*  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 50px;
+  font-size: 2.6em;
+  color: var(--text-secondary-color);
+  background-color: aqua;
+  border-radius: 1%; */
+  font-size: 2.4em;
+  height: 45px;
+  padding-top: 5px;
+  width: 50px;
+  border-radius: 50%;
+  color: var(--text-secondary-color);
+}
+
+.DottedMenu:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--background-secondary-color);
+}

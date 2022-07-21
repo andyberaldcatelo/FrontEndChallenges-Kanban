@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+:root {
+  --background-primary-color: #2c2c38;
+  --background-secondary-color: #21212d;
+  --background-tertiary-color: #545fc6;
+  --text-primary-color: #dfe0e4;
+  --text-secondary-color: #696975;
+  --todo-color: #45c5ea;
+  --doing-color: #836ff6;
+  --done-color: #65e0ad;
+  --main-font-family: "Heebo", sans-serif;
+  --text-font-size: 16px;
+  --text-title-size: 2.5em;
+  --text-title-weight: 600;
+  --text-board-title-size: 2em;
+  --text-board-title-weight: 600;
+}
+
+.App {
+  background-color: var(--background-primary-color);
+  text-align: center;
+  color: var(--text-primary-color);
+  font-family: var(--main-font-family);
+  font-size: var(--text-font-size);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(10vh, auto);
+}
+
+.SidebarContainer {
+  grid-column: 1/2;
+  grid-row: 1/11;
+}
+
+.TopbarContainer {
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+
+.BoardContainer {
+  grid-column: 2/6;
+  grid-row: 2/11;
+}
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */

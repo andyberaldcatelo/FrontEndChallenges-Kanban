@@ -1,0 +1,10 @@
+.Title {
+  font-size: var(--text-title-size);
+  font-weight: var(--text-title-weight);
+  height: 100%;
+  background-color: aqua;
+}
+
+p {
+  margin-top: 30px;
+}
