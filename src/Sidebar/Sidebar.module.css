@@ -1,10 +1,31 @@
-.Title {
-  font-size: var(--text-title-size);
-  font-weight: var(--text-title-weight);
-  height: 100%;
-  background-color: aqua;
+.SideBar {
+  display: grid;
+  grid-auto-rows: minmax(10vh, auto);
 }
 
-p {
-  margin-top: 30px;
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-title-size);
+  font-weight: var(--text-title-weight);
+  height: 17vh;
+}
+
+.First,
+.Second,
+.Third {
+  font-weight: bolder;
+  font-size: 1em;
+  line-height: 30px;
+  color: var(--background-tertiary-color);
+}
+
+.Second {
+  opacity: 80%;
+}
+
+.Third {
+  opacity: 60%;
+  margin-right: 10px;
 }

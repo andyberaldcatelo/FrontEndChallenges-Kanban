@@ -1,0 +1,9 @@
+.BoardName {
+  height: 30px;
+  margin: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.isSelected {
+  background-color: var(--background-tertiary-color);
+}
