@@ -1,9 +1,35 @@
+.BoardLabel {
+  color: var(--text-secondary-color);
+  font-size: var(--text-subtitle-size);
+  letter-spacing: 0.2em;
+  margin: 0px 2px 10px 0px;
+}
+
 .BoardName {
-  height: 30px;
-  margin: auto;
-  border-radius: 0px 10px 10px 0px;
+  height: 40px;
+  margin: 2px 10px 6px 0px;
+  padding-left: 25px;
+  border-radius: 0px 30px 30px 0px;
+  color: var(--text-secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.BoardName:hover {
+  background-color: var(--background-tertiary-color-opacity30);
+  cursor: pointer;
 }
 
 .isSelected {
+  color: var(--text-primary-color);
   background-color: var(--background-tertiary-color);
+}
+
+.Span {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }

@@ -1,17 +1,12 @@
-class C_Board {
+export default class C_Board {
   private _boardName: string;
   private _isSelected: boolean;
 
-  constructor(boardName: string) {
+  constructor(boardName: string, isSelected?: boolean) {
     this._boardName = boardName;
-    this._isSelected = false;
-  }
-
-  public get boardName(): string {
-    return this._boardName;
-  }
-  public set boardName(value: string) {
-    this._boardName = value;
+    isSelected !== undefined
+      ? (this._isSelected = isSelected)
+      : (this._isSelected = false);
   }
 
   public get isSelected(): boolean {
@@ -20,6 +15,11 @@ class C_Board {
   public set isSelected(value: boolean) {
     this._isSelected = value;
   }
-}
 
-export default C_Board;
+  public get boardName(): string {
+    return this._boardName;
+  }
+  public set boardName(value: string) {
+    this._boardName = value;
+  }
+}
