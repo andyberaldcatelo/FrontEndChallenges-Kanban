@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./BoardListContainer.module.css";
 import C_Board from "../classes/C_Board";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -8,12 +8,18 @@ type BoardListContainerProps = {
 };
 
 const BoardListContainer = (props: BoardListContainerProps) => {
+  const [selectedBoard, setSelectedBoard] = useState<number | null>(0);
   let boardList = [...props.boards];
+
+  const handleBoardClick = (boardId: number | null) => {
+    if (boardId === selectedBoard) return;
+    setSelectedBoard(boardId);
+  };
 
   let boardListTSX = boardList.map((board, key) => {
     return (
       <>
-        {board.isSelected ? (
+        {board.id === selectedBoard ? (
           <div
             className={[classes.BoardName, classes.isSelected].join(" ")}
             key={key}
@@ -28,7 +34,7 @@ const BoardListContainer = (props: BoardListContainerProps) => {
             <span className={classes.Span}>
               <MdSpaceDashboard />
             </span>
-            <p>{board.boardName}</p>
+            <p onClick={() => handleBoardClick(board.id)}>{board.boardName}</p>
           </div>
         )}
       </>
