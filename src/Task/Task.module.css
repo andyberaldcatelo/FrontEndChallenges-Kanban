@@ -1,0 +1,22 @@
+.Task {
+  width: 90%;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: var(--background-primary-color);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.TaskTitle {
+  color: var(--text-primary-color);
+  font-size: var(--text-font-size);
+  font-weight: var(--text-board-title-weight);
+}
+
+.SubtaskInfo {
+  color: var(--text-secondary-color);
+  font-size: var(--text-subtitle-size);
+  font-weight: var(--text-board-title-weight);
+}

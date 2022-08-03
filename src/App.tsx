@@ -15,7 +15,7 @@ function App() {
         <Topbar />
       </div>
       <div className={classes.BoardContainer}>
-        <Board />
+        <Board tasks={boards[0].tasks} />
       </div>
     </div>
   );
