@@ -19,6 +19,8 @@
   --text-title-weight: 600;
   --text-board-title-size: 2em;
   --text-board-title-weight: 600;
+  --button-primary-color: #545fc6;
+  --button-primary-color-hover: #545fc6c6;
 }
 
 .App {

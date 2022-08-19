@@ -1,7 +1,7 @@
-enum TODO {
+enum E_TaskState {
   TODO,
   DOING,
   DONE,
 }
 
-export default TODO;
+export default E_TaskState;

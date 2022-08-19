@@ -5,6 +5,7 @@ import C_Board from "../classes/C_Board";
 
 type SidebarProps = {
   boards: C_Board[];
+  handleBoardChange_fromApp: (boardId: number) => void;
 };
 
 const Sidebar = (props: SidebarProps) => {
@@ -17,7 +18,10 @@ const Sidebar = (props: SidebarProps) => {
         kanban
       </div>
       <div>
-        <BoardListContainer boards={props.boards} />
+        <BoardListContainer
+          boards={props.boards}
+          handleBoardChange_fromApp={props.handleBoardChange_fromApp}
+        />
       </div>
     </div>
   );

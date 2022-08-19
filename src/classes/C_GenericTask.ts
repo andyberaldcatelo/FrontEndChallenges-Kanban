@@ -1,18 +1,12 @@
-import E_TaskState from "../Enum/E_TaskState";
+import { T_TaskState } from "../Type/Type_TaskState";
 
 export default class C_GenericTask {
   protected _title: string;
-  protected _status: E_TaskState;
+  protected _status: T_TaskState = "TODO";
   protected _taskId: number | undefined;
 
-  constructor(
-    title: string,
-    status?: E_TaskState,
-    taskId?: number | undefined
-  ) {
+  constructor(title: string) {
     this._title = title;
-    this._status = status ? status : E_TaskState.TODO;
-    this._taskId = taskId ? taskId : undefined;
   }
 
   public get title(): string {
@@ -23,11 +17,11 @@ export default class C_GenericTask {
     this._title = value;
   }
 
-  public get status(): E_TaskState {
+  public get status(): T_TaskState {
     return this._status;
   }
 
-  public set status(value: E_TaskState) {
+  public set status(value: T_TaskState) {
     this._status = value;
   }
 

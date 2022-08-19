@@ -5,13 +5,14 @@ import { MdSpaceDashboard } from "react-icons/md";
 
 type BoardListContainerProps = {
   boards: C_Board[];
+  handleBoardChange_fromApp: (boardId: number) => void;
 };
 
 const BoardListContainer = (props: BoardListContainerProps) => {
-  const [selectedBoard, setSelectedBoard] = useState<number | null>(0);
+  const [selectedBoard, setSelectedBoard] = useState(0);
   let boardList = [...props.boards];
 
-  const handleBoardClick = (boardId: number | null) => {
+  const handleBoardClick = (boardId: number) => {
     if (boardId === selectedBoard) return;
     setSelectedBoard(boardId);
   };
@@ -30,11 +31,19 @@ const BoardListContainer = (props: BoardListContainerProps) => {
             <p>{board.boardName}</p>
           </div>
         ) : (
-          <div className={classes.BoardName}>
+          <div
+            onClick={() => {
+              if (board.id !== null) {
+                handleBoardClick(board.id);
+                props.handleBoardChange_fromApp(board.id);
+              }
+            }}
+            className={classes.BoardName}
+          >
             <span className={classes.Span}>
               <MdSpaceDashboard />
             </span>
-            <p onClick={() => handleBoardClick(board.id)}>{board.boardName}</p>
+            <p>{board.boardName}</p>
           </div>
         )}
       </>

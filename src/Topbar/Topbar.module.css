@@ -16,13 +16,18 @@
 
 .BtnAddNewTask {
   height: 50px;
-  background-color: var(--background-tertiary-color);
+  background-color: var(--button-primary-color);
   color: var(--text-primary-color);
   font-size: 1.3em;
   font-weight: var(--text-board-title-weight);
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
+}
+
+.BtnAddNewTask:hover {
+  cursor: pointer;
+  background-color: var(--button-primary-color-hover);
 }
 
 .DottedMenu {

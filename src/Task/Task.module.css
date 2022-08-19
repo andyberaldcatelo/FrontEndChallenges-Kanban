@@ -1,22 +1,29 @@
 .Task {
-  width: 90%;
+  width: 80%;
+  height: fit-content;
   border-radius: 15px;
-  padding: 10px;
+  padding: 7px 20px 7px 15px;
   margin: 10px 0px;
   background-color: var(--background-primary-color);
   display: flex;
-  justify-content: center;
   text-align: left;
+}
+
+.Task:hover {
+  cursor: pointer;
+  background-color: var(--background-tertiary-color);
 }
 
 .TaskTitle {
   color: var(--text-primary-color);
   font-size: var(--text-font-size);
   font-weight: var(--text-board-title-weight);
+  margin-bottom: 5px;
 }
 
 .SubtaskInfo {
   color: var(--text-secondary-color);
   font-size: var(--text-subtitle-size);
   font-weight: var(--text-board-title-weight);
+  margin-top: 5px;
 }

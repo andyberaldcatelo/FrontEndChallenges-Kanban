@@ -3,6 +3,28 @@
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: minmax(20vh, auto);
   column-gap: 5px;
   padding-left: 20px;
+}
+
+.TaskState_Title {
+  text-align: left;
+  padding-left: 1em;
+  color: var(--text-secondary-color);
+}
+
+.Todo {
+  color: var(--todo-color);
+  margin-right: 0.4em;
+}
+
+.Doing {
+  color: var(--doing-color);
+  margin-right: 0.4em;
+}
+
+.Done {
+  color: var(--done-color);
+  margin-right: 0.4em;
 }
