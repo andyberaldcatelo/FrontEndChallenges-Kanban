@@ -11,7 +11,7 @@
 
 .Task:hover {
   cursor: pointer;
-  background-color: var(--background-tertiary-color);
+  background-color: var(--background-tertiary-color-opacity30);
 }
 
 .TaskTitle {

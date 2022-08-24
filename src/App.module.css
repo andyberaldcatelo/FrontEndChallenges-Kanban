@@ -14,11 +14,15 @@
   --done-color: #65e0ad;
   --main-font-family: "Heebo", sans-serif;
   --text-font-size: 16px;
-  --text-subtitle-size: 14px;
   --text-title-size: 2.5em;
-  --text-title-weight: 600;
   --text-board-title-size: 2em;
+  --modal-title-font-size: 1.5em;
+  --modal-description-font-size: 1em;
+  --text-subtitle-size: 14px;
+  --text-title-weight: 600;
   --text-board-title-weight: 600;
+  --modal-title-font-weight: 550;
+  --modal-description-font-weight: 400;
   --button-primary-color: #545fc6;
   --button-primary-color-hover: #545fc6c6;
 }

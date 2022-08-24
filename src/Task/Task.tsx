@@ -9,21 +9,36 @@ type TaskProps = {
 
 const Task = (props: TaskProps) => {
   const [isTaskModalVisible, setIsTaskModalVisible] = useState(false);
-  let taskModalJSX: JSX.Element = <TaskModal task={props.taskData} />;
+
+  const handleOpenModal = () => {
+    setIsTaskModalVisible(true);
+    console.log("open");
+  };
+
+  const handleCloseModal_fromTask = () => {
+    setIsTaskModalVisible(false);
+    console.log("close");
+  };
+
+  let taskModalJSX: JSX.Element = (
+    <TaskModal
+      task={props.taskData}
+      handleCloseModal_fromTask={handleCloseModal_fromTask}
+    />
+  );
 
   return (
-    <div
-      onClick={() => setIsTaskModalVisible(!isTaskModalVisible)}
-      className={classes.Task}
-    >
-      {isTaskModalVisible ? taskModalJSX : null}
-      <div>
-        <p className={classes.TaskTitle}>{props.taskData.title}</p>
-        <p
-          className={classes.SubtaskInfo}
-        >{`${props.taskData.nbSubtasksDone} of ${props.taskData.nbSubtasks} subtasks`}</p>
+    <>
+      <div onClick={() => handleOpenModal()} className={classes.Task}>
+        <div>
+          <p className={classes.TaskTitle}>{props.taskData.title}</p>
+          <p
+            className={classes.SubtaskInfo}
+          >{`${props.taskData.nbSubtasksDone} of ${props.taskData.nbSubtasks} subtasks`}</p>
+        </div>
       </div>
-    </div>
+      <div>{isTaskModalVisible ? taskModalJSX : null}</div>
+    </>
   );
 };
 

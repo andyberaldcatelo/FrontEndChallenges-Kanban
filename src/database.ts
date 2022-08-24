@@ -2,27 +2,56 @@ import C_Board from "./classes/C_Board";
 import C_GenericTask from "./classes/C_GenericTask";
 import { createTask } from "./Utility";
 
-/* let C_buildFirst = new C_GenericTask("Build First");
-let C_buildSecond = new C_GenericTask("Build Second");
-let C_buildThird = new C_GenericTask("Build Third"); */
+let C_build1 = new C_GenericTask(
+  "Despite the general collegiality shown during the hearing, Rep."
+);
+let C_build2 = new C_GenericTask(
+  "I then got an email in which a woman living in Istanbul said it sounded like I had been spending my time in the Starbucks/shopping districts."
+);
+let C_build3 = new C_GenericTask(
+  "In some neighborhoods, she said, women who don't have headscarves will often get a disapproving stare from men and from other women."
+);
+let C_build4 = new C_GenericTask(
+  " Actually, my sample wasn't terribly narrow in a quantitative sense."
+);
+let C_build5 = new C_GenericTask(
+  "The Court even granted his attorney the opportunity to speak during oral arguments, which took place in October."
+);
+let C_build6 = new C_GenericTask(
+  "Whales contributed oil for illuminants, ambergris for perfumes, and baleen, a bonelike substance extracted from the jaw, for umbrellas."
+);
+let C_build7 = new C_GenericTask(
+  "Yet disproportionate power, guns, and money, when used intelligently and in the service of building legitimacy, are rather effective."
+);
+let C_build8 = new C_GenericTask("And if only that was the least of it.");
+let C_build9 = new C_GenericTask(
+  "Fusce condimentum felis ante, sit amet dignissim massa feugiat at."
+);
+let C_build10 = new C_GenericTask(
+  "Proin at placerat magna. Phasellus pellentesque non nulla vitae posuere."
+);
+let C_build11 = new C_GenericTask(
+  "Proin eu erat orci. Mauris ac lobortis ante, eget dictum."
+);
+let C_build12 = new C_GenericTask(
+  "Nulla condimentum quis dolor eget laoreet. Ut sit amet porta."
+);
 
-let C_build1 = new C_GenericTask("1");
-let C_build2 = new C_GenericTask("2");
-let C_build3 = new C_GenericTask("3");
-let C_build4 = new C_GenericTask("4");
-let C_build5 = new C_GenericTask("5");
-let C_build6 = new C_GenericTask("6");
-let C_build7 = new C_GenericTask("7");
-let C_build8 = new C_GenericTask("8");
-let C_build9 = new C_GenericTask("9");
-let C_build10 = new C_GenericTask("10");
-let C_build11 = new C_GenericTask("11");
-let C_build12 = new C_GenericTask("12");
-let C_build13 = new C_GenericTask("13");
-let C_build14 = new C_GenericTask("14");
-let C_build15 = new C_GenericTask("15");
-let C_build16 = new C_GenericTask("16");
-let C_build17 = new C_GenericTask("17");
+let C_build13 = new C_GenericTask(
+  "Sed tincidunt ante pretium, posuere quam a, dapibus dolor. Integer."
+);
+let C_build14 = new C_GenericTask(
+  "Mauris feugiat neque leo. Curabitur eu congue risus. Quisque et."
+);
+let C_build15 = new C_GenericTask(
+  "Praesent ac egestas tortor. Duis consequat imperdiet metus ac blandit.   "
+);
+let C_build16 = new C_GenericTask(
+  "Aliquam et lorem non nibh feugiat egestas nec quis ipsum."
+);
+let C_build17 = new C_GenericTask(
+  "Aliquam ac commodo lectus. Nullam sit amet aliquam ipsum. Morbi."
+);
 
 let C_buildUIOnboarding = createTask(
   "Build UI for onboarding flow",
@@ -50,7 +79,7 @@ let C_designSettings = createTask(
 C_designSettings.subTasks[0].status = "DONE";
 
 let C_addAccountManagement = createTask(
-  "Add account manageemnt endpoints",
+  "Add account management endpoints",
   "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, sequi! Id libero repudiandae, dicta ducimus architecto veniam repellat explicabo sint provident debitis ex vitae sunt odio, sequi quo at! Ducimus?",
   [C_build7, C_build8, C_build9]
 );

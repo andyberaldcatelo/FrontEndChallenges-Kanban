@@ -1,10 +1,118 @@
-.TaskModalContainer {
-  max-width: 500px;
-  max-height: 800px;
+.TaskModal_Container {
   position: fixed;
-  right: 25%;
-  top: 25%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: left;
+  z-index: 10;
+}
+
+.TaskModal_BackDrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: auto;
+}
+
+.TaskModal_Box {
+  position: relative;
+  padding: 20px 30px 20px 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 30%;
+  min-width: 20%;
+  max-width: 40%;
+  max-height: 80%;
   background-color: var(--background-primary-color);
-  /* align-items: center;
-  justify-content: center; */
+  z-index: 12;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.BsXLg_Container {
+  height: 15px;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.BsXLg {
+  padding: 0.5em;
+  color: var(--background-tertiary-color);
+}
+
+.BsXLg:hover {
+  border-radius: 50%;
+  background-color: var(--background-secondary-color);
+}
+
+.BsPencil {
+  padding: 0.5em;
+  color: var(--background-tertiary-color);
+}
+
+.BsPencil:hover {
+  border-radius: 50%;
+  background-color: var(--background-secondary-color);
+}
+
+.Task_Title {
+  font-size: var(--modal-title-font-size);
+  font-weight: var(--modal-title-font-weight);
+}
+
+.Task_Description {
+  font-size: var(--modal-description-font-size);
+  font-weight: var(--modal-description-font-weight);
+  color: var(--text-secondary-color);
+}
+
+.Subtasks_Container {
+  margin: 20px 0px;
+}
+
+.Subtask {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  border-radius: 5px;
+  padding: 15px 15px;
+  margin: 5px 0px;
+  background-color: var(--background-secondary-color);
+  min-height: 20px;
+}
+
+.Subtask_Span {
+  font-size: var(--modal-description-font-size);
+  font-weight: 500;
+  color: var(--text-primary-color);
+}
+
+.Checkbox_Container {
+  align-self: center;
+}
+
+.Checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.Status_Select {
+  margin-top: 6px;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  width: 100%;
+  height: 40px;
+  font-size: var(--modal-description-font-size);
+  font-weight: var(--modal-description-font-weight);
+  border: 1px solid var(--text-secondary-color);
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+  border-radius: 3px;
 }
